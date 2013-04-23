@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="lib/jquery-1.9.1.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+  </head>
+  <body>
+    <script src="src/Models/App.js"></script>
+    <script src="src/Models/Message.js"></script>
+    <script src="src/Models/AllMessages.js"></script>
+    <script src="src/Views/AppView.js"></script>
+    <script src="src/Views/MessageView.js"></script>
+    <script src="src/Views/MessageEntryView.js"></script>
+    <script>
+      new AppView({model: new App()}).$el.appendTo('body');
+    </script>
+  </body>
+</html>
